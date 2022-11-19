@@ -38,7 +38,7 @@ def get_text(message):
         bot.send_message(message.chat.id, f'Win rate : {hero_win_rate_bot}' )
 
 
-
+# fsdfsdfsdf
 
 
 
