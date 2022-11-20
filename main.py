@@ -17,10 +17,6 @@ def help(message):
 @bot.message_handler()
 def get_text(message):
     msg = message.text.lower().replace(' ','-')
-    if msg == 'mereska':
-        bot.send_message(message.chat.id , 'Ты даун')
-    if msg == '94rix':
-            bot.send_message(message.chat.id, 'Win rate : 0%')
     url = 'https://ru.dotabuff.com/heroes/' + str(msg)
     headers = {
         'User-Agent': UserAgent().random
@@ -37,11 +33,7 @@ def get_text(message):
 
         bot.send_message(message.chat.id, f'Win rate : {hero_win_rate_bot}' )
 
-
-# fsdfsdfsdf
-
-
-
+#First try to commit brench
 bot.polling(none_stop=True, interval=0)
 
 
